@@ -5,11 +5,19 @@
 </template>
 
 <script>
+import conn from '@/modules/connection';
+
 export default {
   name: 'App',
   methods: {
-    onClick () {
-      alert("onClick");
+    async onClick () {
+      try {
+        const credential = await conn.post("https://vxet3hs2k7.execute-api.ap-northeast-3.amazonaws.com/credential");
+        console.log(credential);
+      } catch (err) {
+        alert("Error");
+        console.log(err);
+      }
     },
   },
 }
