@@ -12,7 +12,7 @@ export default {
   methods: {
     async onClick () {
       try {
-        const credential = await conn.post("https://vxet3hs2k7.execute-api.ap-northeast-3.amazonaws.com/credential");
+        const credential = await conn.post("https://d3prrfdp8wi7j5.cloudfront.net/credential");
         console.log(credential);
       } catch (err) {
         alert("Error");
