@@ -1,12 +1,17 @@
 <template>
   <div id="app">
-    Frontend
+    <button @click="onClick">実行</button>
   </div>
 </template>
 
 <script>
 export default {
   name: 'App',
+  methods: {
+    onClick () {
+      alert("onClick");
+    },
+  },
 }
 </script>
 
