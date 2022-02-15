@@ -13,7 +13,7 @@ exports.handler = async (event) => {
         body: JSON.stringify({ message: 'CLI Deploy Successful !!' }),
     };
     response.multiValueHeaders["Set-Cookie"] = response.multiValueHeaders["Set-Cookie"].map(cookie => {
-        cookie += "; Secure; HttpOnly; SameSite=None";
+        cookie += "; Secure; HttpOnly; SameSite=None; Domain=dhtek7adlh3z.cloudfront.net";
         return cookie;
     });
     return response;
