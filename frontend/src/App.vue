@@ -14,6 +14,9 @@ export default {
       try {
         const credential = await conn.post("https://credential.yanap-app.com/credential");
         console.log(credential);
+
+        const content = await conn.get("https://contents.yanap-app.com/hoge/fuga/piyo.json");
+        console.log(content);
       } catch (err) {
         alert("Error");
         console.log(err);
