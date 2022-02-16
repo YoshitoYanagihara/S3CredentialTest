@@ -12,7 +12,7 @@ export default {
   methods: {
     async onClick () {
       try {
-        const credential = await conn.post("https://d3prrfdp8wi7j5.cloudfront.net/credential");
+        const credential = await conn.post("https://credential.yanap-app.com/credential");
         console.log(credential);
       } catch (err) {
         alert("Error");
