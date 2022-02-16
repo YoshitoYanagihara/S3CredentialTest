@@ -7,5 +7,5 @@ S3に置いてあるjsonファイルに対してアクセスする
 
 |key|value|
 |---|---|
-|jsonファイルのURL|https://credential-test.s3.ap-northeast-3.amazonaws.com/hoge/fuga/piyo.json|
-|クレデンシャル取得API|https://vxet3hs2k7.execute-api.ap-northeast-3.amazonaws.com/credential|
+|jsonファイルのURL|https://contents.yanap-app.com/hoge/fuga/piyo.json|
+|クレデンシャル取得API|https://credential.yanap-app.com/credential|
