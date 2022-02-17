@@ -17,6 +17,7 @@ export default {
 
         const content = await conn.get("https://contents.yanap-app.com/hoge/fuga/piyo.json");
         console.log(content);
+        alert(content.data.message);
       } catch (err) {
         alert("Error");
         console.log(err);
