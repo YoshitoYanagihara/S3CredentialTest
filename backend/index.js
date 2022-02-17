@@ -8,7 +8,7 @@ exports.handler = async (event) => {
             "Access-Control-Allow-Credentials": true,
         },
         multiValueHeaders: {
-            "Set-Cookie": ["Test1=Hoge", "Test2=Fuga", "Test3=Piyo"],
+            "Set-Cookie": ["Test1=Hoge; Path=/hoge", "Test2=Fuga; Path=/hoge/fuga", "Test3=Piyo; Path=/hoge/fuga/piyo.json"],
         },
         body: JSON.stringify({ message: 'CLI Deploy Successful !!' }),
     };
