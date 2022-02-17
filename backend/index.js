@@ -52,7 +52,7 @@ exports.handler = async (event) => {
             body: JSON.stringify({ message: "Success" }),
         };
         response.multiValueHeaders["Set-Cookie"] = response.multiValueHeaders["Set-Cookie"].map(cookie => {
-            cookie += "; Secure; SameSite=None; Domain=yanap-app.com; Path=/hoge/fuga/piyo.json";
+            cookie += "; Secure; HttpOnly; SameSite=None; Domain=yanap-app.com; Path=/hoge/fuga/piyo.json";
             return cookie;
         });
         return response;
